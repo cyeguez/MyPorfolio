@@ -1,0 +1,18 @@
+.footer {
+  height: 40px;
+  margin-block: 3rem;
+  padding-inline: 1rem;
+
+  .footer__text {
+    text-align: center;
+    font-size: 13px;
+    color: var(--color-text);
+    
+    
+  }
+
+  .footer__text--name:hover {
+    cursor: pointer;
+    color: var(resalt);
+  }
+}

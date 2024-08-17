@@ -1,0 +1,47 @@
+.projects {
+  margin-top: 4rem;
+  padding-inline: 1rem;
+
+  .projects__title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+  }
+  .projects__container {
+    .projects__item {
+      .project__item__previous {
+        .project__item__previous__link {
+          display: block;
+          width: 100%;          
+          margin: 0 auto;
+          border-radius: 10px;
+          
+          &:hover{
+           box-shadow: 0 0px 10px var(--secondary);
+          }
+
+          .project__item__previous__image {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+
+
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1115px) {
+  .projects {
+    padding-inline: 2rem;
+
+    .projects__container {
+      
+    }
+  }
+}

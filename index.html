@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/about-me.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/skills.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <title>My Porfolio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__btn-menu">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="icon-menu"
+        >
+          2px;
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M4 6l16 0" />
+          <path d="M4 12l16 0" />
+          <path d="M4 18l16 0" />
+        </svg>
+
+        <svg
+          class="icon-close"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+          <path d="M18 6l-12 12" />
+          <path d="M6 6l12 12" />
+        </svg>
+      </div>
+
+      <label for="btn-mode-dark" class="container-btn-dark">
+        <input
+          type="checkbox"
+          id="btn-mode-dark"
+          class="container-btn-dark__input"
+        />
+        <div class="container-btn-dark__wrapper">
+          <div class="container-btn-dark__wrapper__circle" id="btnCircle"></div>
+
+          <svg
+            id="iconMoon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                }
+              </style>
+            </defs>
+            <title>asleep--filled</title>
+            <path
+              d="M14.98,3a1.0024,1.0024,0,0,0-.1746.0156A13.0959,13.0959,0,0,0,16.63,28.9973c.1641.006.3282,0,.4909,0a13.0724,13.0724,0,0,0,10.702-5.5556,1.0094,1.0094,0,0,0-.7833-1.5644A13.08,13.08,0,0,1,15.8892,4.38,1.0149,1.0149,0,0,0,14.98,3Z"
+            />
+            <rect
+              id="_Transparent_Rectangle_"
+              data-name="&lt;Transparent Rectangle&gt;"
+              class="cls-1"
+              width="32"
+              height="32"
+            />
+          </svg>
+
+          <svg
+            id="iconSun"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+          >
+            <defs>
+              <style>
+                .cls-1 {
+                  fill: none;
+                }
+              </style>
+            </defs>
+            <title>uv-index--filled</title>
+            <path
+              d="M16,30l-3.4634-5.8223L6,26l1.8223-6.5369L2,16l5.8223-3.4631L6,6l6.5366,1.8223L16,2l3.4634,5.8223L26,6l-1.8223,6.5369L30,16l-5.8223,3.4631L26,26l-6.5366-1.8223Z"
+            />
+            <rect
+              id="_Transparent_Rectangle_"
+              data-name="&lt;Transparent Rectangle&gt;"
+              class="cls-1"
+              width="32"
+              height="32"
+            />
+          </svg>
+        </div>
+      </label>
+
+      <nav class="nav">
+        <ul class="nav__container-links">
+          <li class="nav__container-links__item">
+            <a href="/" class="active">Home</a>
+          </li>
+          <li class="nav__container-links__item">
+            <a href="#about" class="">César Yegüez</a>
+          </li>
+          <li class="nav__container-links__item">
+            <a href="#skills">Skills</a>
+          </li>
+          <li class="nav__container-links__item">
+            <a href="#projects">Projects</a>
+          </li>
+
+          <li class="nav__container-links__item">
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1 class="hero__title">
+          Hey, I'm <span class="hero__title--name">César</span>
+          <span class="hero__title--hand">👋</span>
+        </h1>
+        <h2 class="hero__job">I'm a Fronted Developer.</h2>
+      </section>
+
+      <section id="about" class="about-me">
+        <div class="about-me__wrapp">
+          <div class="about-me__avatar"></div>
+
+          <p class="about-me__introduction">
+            Hello! I am a passionate frontend developer with about a year and a
+            half of experience in learning and creating attractive and
+            functional web applications. My interest in technology and
+            development has led me to explore various tools and frameworks, such
+            as HTML, CSS, and JavaScript, as well as libraries like React. I am
+            always looking for new challenges and opportunities to improve my
+            skills and contribute to innovative projects. I am excited about the
+            future of web development and how I can be a part of this evolution.
+            Thank you for visiting my portfolio!
+          </p>
+        </div>
+
+        <div class="about-me__container">
+          <button type="button" class="about-me__container__contact">
+            <a href="">Connet with me</a>
+          </button>
+          <button type="button" class="about-me__container__cv">
+            <a href="">Download my cv</a>
+          </button>
+        </div>
+        <div class="about-me__red-social">
+          <a href="https://github.com/cyeguez" target="_blank">
+            <svg
+              viewBox="0 0 256 250"
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid"
+              id="icon-gitHub"
+              class="icon-social"
+            >
+              <path
+                fill="currentColor"
+                d="M128.001 0C57.317 0 0 57.307 0 128.001c0 56.554 36.676 104.535 87.535 121.46 6.397 1.185 8.746-2.777 8.746-6.158 0-3.052-.12-13.135-.174-23.83-35.61 7.742-43.124-15.103-43.124-15.103-5.823-14.795-14.213-18.73-14.213-18.73-11.613-7.944.876-7.78.876-7.78 12.853.902 19.621 13.19 19.621 13.19 11.417 19.568 29.945 13.911 37.249 10.64 1.149-8.272 4.466-13.92 8.127-17.116-28.431-3.236-58.318-14.212-58.318-63.258 0-13.975 5-25.394 13.188-34.358-1.329-3.224-5.71-16.242 1.24-33.874 0 0 10.749-3.44 35.21 13.121 10.21-2.836 21.16-4.258 32.038-4.307 10.878.049 21.837 1.47 32.066 4.307 24.431-16.56 35.165-13.12 35.165-13.12 6.967 17.63 2.584 30.65 1.255 33.873 8.207 8.964 13.173 20.383 13.173 34.358 0 49.163-29.944 59.988-58.447 63.157 4.591 3.972 8.682 11.762 8.682 23.704 0 17.126-.148 30.91-.148 35.126 0 3.407 2.304 7.398 8.792 6.14C219.37 232.5 256 184.537 256 128.002 256 57.307 198.691 0 128.001 0Zm-80.06 182.34c-.282.636-1.283.827-2.194.39-.929-.417-1.45-1.284-1.15-1.922.276-.655 1.279-.838 2.205-.399.93.418 1.46 1.293 1.139 1.931Zm6.296 5.618c-.61.566-1.804.303-2.614-.591-.837-.892-.994-2.086-.375-2.66.63-.566 1.787-.301 2.626.591.838.903 1 2.088.363 2.66Zm4.32 7.188c-.785.545-2.067.034-2.86-1.104-.784-1.138-.784-2.503.017-3.05.795-.547 2.058-.055 2.861 1.075.782 1.157.782 2.522-.019 3.08Zm7.304 8.325c-.701.774-2.196.566-3.29-.49-1.119-1.032-1.43-2.496-.726-3.27.71-.776 2.213-.558 3.315.49 1.11 1.03 1.45 2.505.701 3.27Zm9.442 2.81c-.31 1.003-1.75 1.459-3.199 1.033-1.448-.439-2.395-1.613-2.103-2.626.301-1.01 1.747-1.484 3.207-1.028 1.446.436 2.396 1.602 2.095 2.622Zm10.744 1.193c.036 1.055-1.193 1.93-2.715 1.95-1.53.034-2.769-.82-2.786-1.86 0-1.065 1.202-1.932 2.733-1.958 1.522-.03 2.768.818 2.768 1.868Zm10.555-.405c.182 1.03-.875 2.088-2.387 2.37-1.485.271-2.861-.365-3.05-1.386-.184-1.056.893-2.114 2.376-2.387 1.514-.263 2.868.356 3.061 1.403Z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://www.frontendmentor.io/profile/cyeguez"
+            target="_blank"
+          >
+            <svg
+              viewBox="136.85 110.11 225.33 222.9"
+              xmlns="http://www.w3.org/2000/svg"
+              id="icon-frontMentor"
+              class="icon-social"
+            >
+              <path d="m254.2 123v155.67" fill="currentColor" />
+              <path
+                d="m244.2 123v155.67c0 12.87 20 12.89 20 0v-155.67c0-12.87-20-12.89-20 0zm112.54 44.79c-20 9.33-40 18.67-60 28-1.67.78-1.6 3.52 0 4.32 19.33 9.67 38.67 19.33 58 29 2.87 1.43 5.41-2.88 2.52-4.32-19.33-9.67-38.67-19.33-58-29v4.32c20-9.33 40-18.67 60-28 2.92-1.36.38-5.67-2.52-4.32z"
+                fill="currentColor"
+              />
+              <path
+                d="m138.18 223.14c11.34 53.74 54.41 96.35 108.32 107.04 9.04 1.79 18.28 2.8 27.5 2.82 6.43.01 6.44-9.99 0-10-50.08-.06-96.35-29.49-117.24-75.11-4.01-8.75-6.96-18-8.94-27.41-1.33-6.29-10.97-3.63-9.64 2.66z"
+                fill="currentColor"
+              />
+            </svg>
+          </a>
+          <a href="https://www.linkedin.com/in/cyeguez/" target="_blank">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="icon-social"
+              id="icon-linkedin"
+            >
+              <path
+                d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+              />
+              <rect width="4" height="12" x="2" y="9" />
+              <circle cx="4" cy="4" r="2" />
+            </svg>
+          </a>
+        </div>
+      </section>
+
+      <section id="skills" class="skills">
+        <h2 class="skills__title">My Skills</h2>
+
+        <div class="skills__container">
+          <div class="skills__container__tecnology">
+            <img
+              class="tecnology__img"
+              src="./assets/img/html5.svg"
+              alt="HTML"
+            />
+          </div>
+
+          <div class="skills__container__tecnology">
+            <img src="./assets/img/css.svg" alt="CSS" class="tecnology__img" />
+          </div>
+          <div class="skills__container__tecnology">
+            <img
+              src="./assets/img/javascript.svg"
+              alt="javascript "
+              class="tecnology__img"
+            />
+          </div>
+
+          <div class="skills__container__tecnology">
+            <img
+              src="./assets/img/sass.svg"
+              alt="SASS "
+              class="tecnology__img"
+            />
+          </div>
+
+          <div class="skills__container__tecnology">
+            <img
+              src="./assets/img/tailwindcss.svg"
+              alt="Tailwind "
+              class="tecnology__img"
+            />
+          </div>
+          <div class="skills__container__tecnology">
+            <img
+              src="./assets/img/bootstrap.svg"
+              alt="bootstrap "
+              class="tecnology__img"
+            />
+          </div>
+          <div class="skills__container__tecnology">
+            <img
+              src="./assets/img/react.svg"
+              alt="react "
+              class="tecnology__img"
+            />
+          </div>
+          <div class="skills__container__tecnology">
+            <img
+              src="./assets/img/figma.svg"
+              alt="Figma "
+              class="tecnology__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2 class="projects__title">Projects</h2>
+
+        <div class="projects__container">
+
+          <div class="projects__item">
+            <div class="project__item__previous">
+              <a href="https://cyeguez.github.io/E-commerce-product-page/" class="project__item__previous__link">
+                <img
+                  src="./assets/img/ecommerce.png"
+                  alt="ecommerce"
+                  class="project__item__previous__image"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="projects__info">
+            <h3 class="projects__info__title">
+              YVANS : E-Commerce Website
+            </h3>
+
+            <p class="projects__info__description">
+              Yvan's is a simple digital portfolio for a small online business
+              which helps people to personalize their assets. It's a simple
+              website used to showcase yvans products and services.
+            </p>
+            <p class="projects__info__tecnology">
+              Build with:
+            </p>
+
+            <ul class="projects__info__list">
+              <li>Tailwind CSS</li>
+              <li>TypeScript</li>
+              <li>SQL</li>
+              <li>Express</li>
+            </ul>
+          </div>
+        </div>
+
+
+
+      </section>
+
+      <section id="contact" class="contact">
+        <h4 class="contact__title">Contact</h4>
+        <h2 class="contact__subtitle">
+          Call or Write <span class="contact__subtitle--resalt">anytime</span>
+        </h2>
+
+        <form action="" class="contact__form" id="contact-form">
+          <div class="form__container">
+            <div class="container__group">
+              <input
+                type="text"
+                required
+                maxlength="45"
+                id="full-name"
+                pattern="[a-zA-Z]+"
+                class="form__input-full-name"
+              />
+
+              <label for="full-name" class="form__full-name">Full Name</label>
+              <span class="error-notification">
+                Input invalid(Input empty)
+              </span>
+            </div>
+
+            <div class="container__group">
+              <input
+                type="email"
+                required
+                maxlength="45"
+                pattern="/\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/gi"
+                id="mail"
+                class="form__input-email"
+              />
+              <label for="mail" class="form__email">E-mail Address</label>
+              <span class="error-notification"> Email invalid </span>
+            </div>
+
+            <div class="container__group">
+              <input
+                type="tel"
+                required
+                maxlength="45"
+                id="phone"
+                class="form__phone"
+                pattern="^\+?56\s?9\d{8}$
+                "
+              />
+              <label for="phone" class="form__email">Phone</label>
+              <span class="error-notification"> Phone number invalid </span>
+            </div>
+
+            <div class="container__group">
+              <textarea
+                id="message"
+                required
+                name="message"
+                class="form__textarea"
+                pattern="[a-zA-Z]+"
+              ></textarea>
+              <label for="message" class="form__messaje">Message</label>
+              <span class="error-notification">
+                Input invalid(Input empty)
+              </span>
+            </div>
+
+            <button type="submit" class="form__btn-submit">Send Message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__text">
+        Copyright &copy 2023- 2024 | All rights reserved. Made with❤️ by
+        <span class="footer__text--name"> César Yeguez </span>
+      </p>
+    </footer>
+
+    <script src="/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,206 @@
+body {
+  .header {
+    position: sticky;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1rem;
+    padding-top: 1rem;
+    flex-wrap: wrap;
+    top: 0px;
+    background-color: var(--primary);
+    z-index: 9999;
+    color: var(--color-text);
+
+    animation: enhance-header linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 20px;
+
+    .header__btn-menu {
+      position: relative;
+      z-index: 9999;
+
+      .icon-menu {
+        transition: transform 0.1s ease;
+      }
+      .icon-menu.off {
+        transform: scale(0);
+      }
+
+      .icon-close {
+        position: absolute;
+        top: 0;
+        transform: scale(0);
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .icon-close.on {
+        transform: scale(1);
+        top: 0;
+      }
+    }
+    .nav {
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      bottom: 0;
+      top: 80px;
+      display: flex;
+      margin-inline: -1rem;
+      background-color: var(--background-nav);
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: opacity 0.5s;
+
+      &.open-menu {
+        opacity: 1;
+        width: 100%;
+        height: 100vh;
+        bottom: 0;
+        background-color: var(--primary);
+      }
+
+      .nav__container-links {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        .nav.open-menu .nav__container-links {
+          align-items: center;
+        }
+
+        .nav__container-links__item a {
+          color: var(--color-text-nav);
+          font-weight: 800;
+          font-size: 1.5em;
+          border: 1px solid transparent;
+          padding: 0.5rem;
+          transition: border 0.5s ease-in-out, color;
+
+          &:hover {
+            border: 1px solid var(--resalt);
+            color: var(--resalt);
+          }
+        }
+      }
+    }
+
+    .container-btn-dark {
+      width: 70px;
+      height: 30px;
+      border-radius: 50px;
+      background: var(--primary);
+      z-index: 9999;
+
+      .container-btn-dark__input {
+        display: none;
+      }
+      .container-btn-dark__wrapper {
+        width: 100%;
+        height: 100%;
+        transition: background-color 0.8s ease;
+        transition-delay: 0.2s;
+        background-color: rgba(255, 140, 0, 0.864);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 50px;
+
+        padding-inline: 3px;
+
+        .container-btn-dark__wrapper__circle {
+          width: 30px;
+          height: 30px;
+          background-color: var(--primary);
+          border-radius: 50%;
+          margin-left: -3px;
+          box-shadow: -2px -2px 4px rgb(0, 0, 0, 0.2);
+
+          transition: all 0.8s ease;
+        }
+
+        #iconMoon {
+          fill: var(--primary);
+          width: 16px;
+          height: 16px;
+          margin-left: -60px;
+        }
+        #iconSun {
+          width: 16px;
+          height: 16px;
+          fill: var(--primary);
+        }
+      }
+      .container-btn-dark__input:checked
+        + .container-btn-dark__wrapper
+        > .container-btn-dark__wrapper__circle {
+        transform: translateX(40px);
+      }
+
+      .container-btn-dark__input:checked ~ .container-btn-dark__wrapper {
+        background-color: var(--resalt);
+      }
+    }
+
+    .check-btn:checked + .label-check .icon-close {
+      transform: var(--state-open);
+    }
+    .check-btn:checked + .label-check .icon-menu {
+      transform: var(--state-close);
+    }
+  }
+
+  /*Modo Desktop*/
+
+  @media screen and (min-width: 1115px) {
+    .header {
+      margin: 0 auto;
+      display: grid;
+      justify-content: center;
+      grid-template-columns: minmax(60%, 1440px) auto;
+      grid-template-rows: 1fr;
+      padding-top: 0;
+
+      .header__btn-menu {
+        display: none;
+      }
+
+      .nav {
+        width: 100%;
+        height: 100%;
+        grid-column: 1/2;
+        grid-row: 1/1;
+        opacity: 1;
+        position: static;
+        background-color: transparent;
+        top: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        margin-inline: -1rem;
+        justify-content: center;
+        align-items: center;
+
+        .nav__container-links {
+          height: 100%;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 1rem;
+
+          .nav__container-links__item a {
+            font-size: 1.2em;
+          }
+        }
+      }
+
+      .container-btn-dark {
+        grid-column: 2/3;
+      }
+    }
+  }
+}

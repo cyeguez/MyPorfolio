@@ -1,0 +1,244 @@
+@font-face {
+  font-family: Poppins;
+  src: url(./Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+/* Definimos las Custom properties */
+:root[data-theme="light"] {
+  /* Colores */
+  --primary: #fcfcfc;
+  --secondary: #23283e;
+  --color-text: #4e4e4e;
+  --resalt: #2978b5;
+  --color-text-nav: #23283e;
+  --background-nav: #fcfcfc;
+  --error: #f91111;
+  --gradient-name: linear-gradient(
+    to right,
+    #23283e 20%,
+    #2978b5 40%,
+    #2978b5 60%,
+    #23283e 80%
+  );
+  --color-efect: hsla(223, 56%, 94%, 0.4);
+
+  /* TipografÃ­a */
+  --font-poppins: "Poppins";
+  --tipo-secundaria: Verdana;
+}
+
+:root[data-theme="dark"] {
+  --primary: #23283e;
+  --secondary: #fcfcfc;
+  --color-text: #cdcdff;
+  --resalt: #90a0d9;
+  --color-text-nav: #fcfcfc;
+  --background-nav: #23283e;
+  --gradient-name: linear-gradient(
+    to right,
+    #fcfcfc 20%,
+    #90a0d9 40%,
+    #90a0d9 60%,
+    #fcfcfc 80%
+  );
+  --color-efect: hsla(223, 91%, 58%, 0.4);
+  /* TipografÃ­a */
+  --font-poppins: "Poppins";
+  --tipo-secundaria: Verdana;
+}
+
+/* (Opcional) Las adaptamos al modo oscuro */
+
+/* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
+/* @media (prefers-contrast: high) {
+  :root {
+    
+
+    
+  }
+  
+} */
+
+/* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Reseteamos los margin y paddings de todas las etiquetas */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+*::before,
+*::after {
+  display: block;
+}
+
+/* Evitamos problemas con las imagenes */
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  /* (Opcional) */
+  object-fit: cover;
+  /* (Opcional) */
+  object-position: center center;
+}
+
+/* Reseteamos los enlaces para funcionar como cajas... */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+/* ... excepto los que se encuentran en pÃ¡rrafos */
+p a {
+  display: inline;
+}
+
+/* Quitamos los puntos de los <li> */
+li {
+  list-style-type: none;
+}
+
+/* (Opcional) Configuramos anclas suaves */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Desactivamos estilos por defecto de las principales etiquetas de texto */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+strong,
+blockquote,
+i,
+b,
+u,
+em {
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  text-decoration: none;
+  color: inherit;
+}
+/* Evitamos problemas con los pseudoelementos de quotes */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+/* (Opcional) Configuramos el texto que seleccionamos */
+::selection {
+  background-color: var(--resalt);
+  color: var(--secondary);
+}
+
+/* Nivelamos problemas de tipografÃ­as y colocaciÃ³n de formularios */
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  background-color: transparent;
+  color: inherit;
+  display: block;
+  /* (Opcional) */
+  /* // appearance: none; */
+}
+
+/* Reseteamos las tablas */
+table,
+tr,
+td {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Evitamos problemas con los SVG */
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+.dark {
+  background-color: var(--secondary);
+  color: var(--dark-text);
+  transition: background-color 0.8s ease-in-out;
+}
+/* Configuramos la tipografÃ­a para toda la web */
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-family: var(--font-poppins);
+  font-weight: 400;
+  color: var(--color-text);
+  overflow-y: auto;
+  background-color: var(--primary);
+  line-height: 1.4em;
+  transition: background-color 0.8s ease-in-out;
+
+  /* (Opcional) */
+  /* hyphens: auto; */
+  /* (Opcional) */
+  font-smooth: always;
+  /* (Opcional) */
+  -webkit-font-smoothing: antialiased;
+  /* (Opcional) */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes shine {
+  to {
+    background-position: -200% center;
+  }
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg); /* Posición inicial */
+  }
+  25% {
+    transform: rotate(15deg); /* Posición inicial */
+  }
+  50% {
+    transform: rotate(0deg); /* Posición de salto */
+  }
+  75% {
+    transform: rotate(-15deg); /* Posición final */
+  }
+}
+
+@keyframes enhance-header {
+  to {
+    background: var(--color-efect);
+    backdrop-filter: blur(5px);
+  }
+}

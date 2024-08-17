@@ -1,0 +1,50 @@
+.hero {
+  margin-top: 100px;
+  text-align: center;
+  padding-inline: 1rem;
+
+  .hero__title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    padding-inline: 1rem;
+  }
+  .hero__title--name {
+    font-size: 2.5rem;
+    background: var(--gradient-name);
+    background-size: 200%;
+    animation: shine 6s linear infinite;
+    color: transparent;
+    background-clip: text;
+  }
+
+  .hero__title--hand {
+    display: inline-block;
+    animation: move 0.8s infinite;
+  }
+
+  .hero__job {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1115px) {
+  .hero {
+    padding-inline: 2rem;
+
+    .hero__title {
+      font-size: 3rem;
+    }
+
+    .hero__title--name {
+      font-size: 4rem;
+    }
+
+    .hero__job {
+      display: inline-block;
+      font-size: 2rem;
+      margin-top: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+.about-me {
+  padding-inline: 1rem;
+
+  .about-me__avatar{
+    width: 200px;
+    height: 200px;
+    margin: 3rem auto;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    flex-shrink: 0
+  }
+
+  .about-me__introduction {
+    font-size: 1.2em;
+    line-height: 2rem;
+    padding-inline: 1rem;
+    word-wrap: normal;
+  }
+
+  .about-me__container {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+   
+
+
+    .about-me__container__contact,
+    .about-me__container__cv {
+      padding: 15px 15px;
+      text-align: center;
+      font-size: 13px;
+      position: relative;
+      border-radius: 2px;
+      z-index: 1;
+      transition: all 250ms;
+      overflow: hidden;
+      box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: bold;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: "";
+        border-radius: inherit;
+        height: inherit;
+        width: 0;
+        z-index: -1;
+        background-color: var(--resalt);
+        box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+        transition: all 250ms;
+      }
+
+      &:hover {
+        color: var(--primary);
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+    }
+  }
+  .about-me__red-social {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 10px;
+
+    .icon-social {
+      width: 24px;
+      height: 24px;
+      fill: var(--light-text);
+      cursor: pointer;
+
+      &:hover {
+        color: var(--resalt);
+        fill: var(--resalt);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1115px) {
+  .about-me {
+    max-width: 1440px;   
+    margin-inline: auto ;
+    padding: 2rem;
+
+    .about-me__wrapp{
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+
+      .about-me__avatar{
+        width: 400px;
+        height: 400px;
+        border-radius: 0;
+      }
+
+      .about-me__introduction{
+       width: 90%;
+        margin: 0 auto;
+       font-size: 1.5rem;
+       line-height: 2.3rem;
+      }
+    }
+   
+
+  }
+}
