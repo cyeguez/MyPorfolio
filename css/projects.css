@@ -11,37 +11,50 @@
     margin-bottom: 3rem;
   }
   .projects__container {
+    border: 1px solid var(--secondary);
+    padding: 1rem;
+    border-radius: 10px;
     .projects__item {
       .project__item__previous {
         .project__item__previous__link {
           display: block;
-          width: 100%;          
+
           margin: 0 auto;
           border-radius: 10px;
-          
-          &:hover{
-           box-shadow: 0 0px 10px var(--secondary);
+         
+
+          &:hover {
+            box-shadow: 0 0px 10px var(--secondary);
           }
 
           .project__item__previous__image {
             border-radius: 10px;
             width: 100%;
             height: auto;
-
-
+            object-fit: cover;
           }
         }
       }
     }
+    .projects__info {
+      margin-top: 2rem;
+
+      .projects__info__title {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
+
+      .projects__info__list {
+        margin-top: 1rem;
+      }
+    }
   }
 }
-
 @media screen and (min-width: 1115px) {
   .projects {
     padding-inline: 2rem;
 
     .projects__container {
-      
     }
   }
 }

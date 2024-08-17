@@ -8,7 +8,6 @@ const errorNotification = document.querySelector(".error-notification");
 const textarea = document.querySelector(".form__textarea");
 const phone = document.querySelector(".form__phone");
 
-console.log(textarea);
 
 iconMenu.addEventListener("click", () => {
   iconMenu.classList.add("off");
