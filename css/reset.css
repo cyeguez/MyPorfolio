@@ -25,6 +25,9 @@
   /* TipografÃ­a */
   --font-poppins: "Poppins";
   --tipo-secundaria: Verdana;
+  --border-radius: 10px;
+  --border-radius: 8px;
+  --box-shadow: 5px 5px 11px #e5e5e5, -5px -5px 11px #ffffff;
 }
 
 :root[data-theme="dark"] {
@@ -45,6 +48,7 @@
   /* TipografÃ­a */
   --font-poppins: "Poppins";
   --tipo-secundaria: Verdana;
+  --box-shadow: 5px 5px 10px #1e2235, -5px -5px 10px #282e47;
 }
 
 /* (Opcional) Las adaptamos al modo oscuro */

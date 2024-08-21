@@ -29,12 +29,13 @@
       align-items: center;
       transition: transform 1.5ms;
       border-radius: 10px;
-      background: #23283e;
-      box-shadow: 5px 5px 10px #1e2235, -5px -5px 10px #282e47; 
+      background: var(--primary);
+      box-shadow: var(--box-shadow);
+      border: 1px solid transparent;
 
       &:hover {
         cursor: pointer;
-        border-radius: 50%;
+        border: 1px solid var(--resalt);
       }
 
       .tecnology__img {
