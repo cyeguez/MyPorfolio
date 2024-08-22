@@ -1,0 +1,27 @@
+[
+  {
+    "nameProject": "Ecommerce",
+    "image": "../assets/img/ecommerce.png",
+    "description": "This is a product layout view in an ecommerce. It has several sample images that you can click to view in detail. It also features a field to add the quantity of the product, which will be displayed in the cart with its respective value. You can add more products or remove the item.",
+    "url": "https://cyeguez.github.io/E-commerce-product-page/",
+    "tecnology":["Semantic HTML","BEM Methodology", "SASS", "FirstMobile"]
+  },
+
+  {
+    "nameProject": "Pokedex",
+    "image": "../assets/img/pokedex.png",
+    "description": "It is a web page, which is built with HTML, CSS, and JavaScript. The website allows you to search for Pokémon by name or number, and the information displayed is obtained dynamically from the PokeAPI.",
+    "url": "https://cyeguez.github.io/Pokedex/",
+    "tecnology":["Semantic HTML","BEM Methodology", "SASS", "FirstMobile"]
+
+
+  },
+  {
+    "nameProject": "Travel Agency",
+    "image": "../assets/img/travelagency.png",
+    "description": "This is a travel agency website layout. It has a header with a logo, navigation menu, and a search bar. The main content area displays a list of destinations, with each destination having a title, image, and description. The footer contains social media icons and copyright information.",
+    "url": "",
+    "tecnology":["Semantic HTML","BEM Methodology", "SASS", "FirstMobile"]
+
+  }
+]

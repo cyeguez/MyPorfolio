@@ -85,3 +85,49 @@ function validationInput(e) {
     toogleError(textarea);
   }
 }
+
+
+
+
+fetch('./projects.json')
+    .then(response => response.json())
+    .then(data => {
+        const contenedor = document.querySelector('.projects__container');
+        data.forEach(project => {
+            const div = document.createElement('div');
+            const img= document.querySelector(".project__item__previous__link");
+            div.innerHTML = `
+            <div class="projects__item">
+            <div class="project__item__previous">
+              <a
+                href="${project.url}"
+                target="_blank"
+                class="project__item__previous__link"
+                style= "background-image: url('${project.image}');"
+              >
+               
+              </a>
+            </div>
+            <div class="projects__info">
+              <h3 class="projects__info__title">${project.nameProject}</h3>
+
+              <p class="projects__info__description">
+                ${project.description}
+              </p>
+
+              <ul class="projects__info__list">
+                <p class="projects__info__tecnology">Build with:</p>
+                ${project.tecnology.map(item => `
+                  <li class="projects__info__list">- ${item}</li>
+                `).join('')}
+                
+                
+              </ul>
+            </div>
+          </div>
+               
+            `;
+            contenedor.appendChild(div);
+        });
+    })
+    .catch(error => console.error('Error al cargar los proyectos:', error));
