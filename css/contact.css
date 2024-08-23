@@ -152,3 +152,16 @@
     }
   }
 }
+
+@media screen and (min-width: 1115px) {
+  .contact{
+    width: 1115px;
+    padding: 2rem;
+    margin: 4rem auto;
+
+    .contact__form{
+      margin: 0 auto;
+      width: 70%;
+    }
+  }
+}

@@ -159,10 +159,11 @@ body {
 
   @media screen and (min-width: 1115px) {
     .header {
+      
       margin: 0 auto;
       display: grid;
       justify-content: center;
-      grid-template-columns: minmax(60%, 1440px) auto;
+      grid-template-columns: minmax(60%, 1115px) auto;
       grid-template-rows: 1fr;
       padding-top: 0;
 
@@ -186,10 +187,11 @@ body {
         align-items: center;
 
         .nav__container-links {
+          width: 80%;
           height: 100%;
           flex-direction: row;
           align-items: center;
-          justify-content: center;
+          justify-content: space-evenly;
           gap: 1rem;
 
           .nav__container-links__item a {

@@ -49,13 +49,13 @@
 
 @media screen and (min-width: 1115px) {
   .skills {
-    width: 1400px;
+    width: 1115px;
     margin: 0 auto;
-    padding: 32px;
+    padding: 2rem;
 
     .skills__container {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-around;
     }
   }
 }

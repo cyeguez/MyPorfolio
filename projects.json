@@ -10,18 +10,42 @@
   {
     "nameProject": "Pokedex",
     "image": "../assets/img/pokedex.png",
-    "description": "It is a web page, which is built with HTML, CSS, and JavaScript. The website allows you to search for Pokémon by name or number, and the information displayed is obtained dynamically from the PokeAPI.",
+    "description": "It is a Pokedex, which allows you to search for pokemon by name, number and type, this app is powered by the pokeApi.",
     "url": "https://cyeguez.github.io/Pokedex/",
-    "tecnology":["Semantic HTML","BEM Methodology", "SASS", "FirstMobile"]
+    "tecnology":["Semantic HTML","BEM Methodology", "FirstMobile"]
 
 
   },
   {
-    "nameProject": "Travel Agency",
-    "image": "../assets/img/travelagency.png",
-    "description": "This is a travel agency website layout. It has a header with a logo, navigation menu, and a search bar. The main content area displays a list of destinations, with each destination having a title, image, and description. The footer contains social media icons and copyright information.",
-    "url": "",
-    "tecnology":["Semantic HTML","BEM Methodology", "SASS", "FirstMobile"]
-
+    "nameProject": "Landing pages",
+    "image": "../assets/img/Blog.png",
+    "description": "It is a web page, which is built with HTML, SASS, and JavaScript, This project consists of the layout of a static web page, it is responsive, and the menu varies according to the type of device.",
+    "url": "https://cyeguez.github.io/blogr-landing-page/",
+    "tecnology":["Semantic HTML","BEM Methodology", "FirstMobile"]
+  },
+  {
+    "nameProject": "Tip Calculator",
+    "image": "../assets/img/Tip-calculator.png",
+    "description": "This project consists of a website that, by providing the total amount and the number of people, calculates the total and individual tip.",
+    "url": "https://cyeguez.github.io/tip-calculator-app-main/",
+    "tecnology":["Semantic HTML","BEM Methodology", "SASS",  "FirstMobile", "Figma"]
+  },
+  {
+    "nameProject": "Age calculator",
+    "image": "../assets/img/Age-calculator.png",
+    "description": "This project was built with HTML, SASS and other technologies, this website allows you to calculate age..",
+    "url": "https://cyeguez.github.io/age-calculator-app-main/",
+    "tecnology":["Semantic HTML", "CSS custom properties", "BEM Methodology", "SASS", "CSS Grid",  "FirstMobile", "Figma"]
+  },
+  {
+    "nameProject": "Input",
+    "image": "../assets/img/Form.png",
+    "description": "This project was built with HTML, SASS and other technologies, this website allows you to calculate age..",
+    "url": "https://cyeguez.github.io/intro-component-with-signup-form-master/",
+    "tecnology":["Semantic HTML", "CSS custom properties", "BEM Methodology", "SASS",  "FirstMobile", "Figma"]
   }
+
+ 
+  
+  
 ]

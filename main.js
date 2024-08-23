@@ -104,8 +104,7 @@ fetch('./projects.json')
                 target="_blank"
                 class="project__item__previous__link"
                 style= "background-image: url('${project.image}');"
-              >
-               
+              >               
               </a>
             </div>
             <div class="projects__info">
@@ -116,12 +115,10 @@ fetch('./projects.json')
               </p>
 
               <ul class="projects__info__list">
-                <p class="projects__info__tecnology">Build with:</p>
+                Build with:
                 ${project.tecnology.map(item => `
                   <li class="projects__info__list">- ${item}</li>
-                `).join('')}
-                
-                
+                `).join('')}        
               </ul>
             </div>
           </div>

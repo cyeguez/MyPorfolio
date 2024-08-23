@@ -56,7 +56,9 @@
       }
 
       &:hover {
+        background-color: var(--secondary);
         color: var(--primary);
+        box-shadow: 4px 8px 19px -3px rgba(234, 228, 228, 0.27);
       }
 
       &:hover::before {
@@ -75,12 +77,14 @@
     .icon-social {
       width: 24px;
       height: 24px;
-      fill: var(--light-text);
+      fill: var(--primary);
       cursor: pointer;
+      transition: transform 200ms;     
+
 
       &:hover {
-        color: var(--resalt);
-        fill: var(--resalt);
+       transform: scale(1.2);
+
       }
     }
   }
@@ -88,7 +92,7 @@
 
 @media screen and (min-width: 1115px) {
   .about-me {
-    max-width: 1440px;   
+    max-width: 1115px;   
     margin-inline: auto ;
     padding: 2rem;
 
