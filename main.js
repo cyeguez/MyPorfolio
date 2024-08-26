@@ -7,9 +7,7 @@ const mail = document.getElementById("mail");
 const errorNotification = document.querySelector(".error-notification");
 const textarea = document.querySelector(".form__textarea");
 const phone = document.querySelector(".form__phone");
-const form= document.getElementById("contact-form");
-
-
+const form = document.getElementById("contact-form");
 
 iconMenu.addEventListener("click", () => {
   iconMenu.classList.add("off");
@@ -30,23 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (root.getAttribute("data-theme") === "dark") {
     modeDark.checked = true;
-   
   }
 
   modeDark.addEventListener("change", () => {
     toggleModoDark();
-
   });
 
   function toggleModoDark() {
-    const setTheme=  modeDark.checked ? 'dark' : 'light';
+    const setTheme = modeDark.checked ? "dark" : "light";
 
-
-    root.setAttribute('data-theme', setTheme);
-    localStorage.setItem('theme', setTheme);
+    root.setAttribute("data-theme", setTheme);
+    localStorage.setItem("theme", setTheme);
   }
-
-
 });
 // Funcion encargada de validar los Input
 
@@ -88,17 +81,16 @@ function validationInput(e) {
   }
 }
 
-
 // Mostrando los Projectos en la sección de projects
 
-fetch('./projects.json')
-    .then(response => response.json())
-    .then(data => {
-        const contenedor = document.querySelector('.projects__container');
-        data.forEach(project => {
-            const div = document.createElement('div');
-            const img= document.querySelector(".project__item__previous__link");
-            div.innerHTML = `
+fetch("./projects.json")
+  .then((response) => response.json())
+  .then((data) => {
+    const contenedor = document.querySelector(".projects__container");
+    data.forEach((project) => {
+      const div = document.createElement("div");
+      const img = document.querySelector(".project__item__previous__link");
+      div.innerHTML = `
             <div class="projects__item">
             <div class="project__item__previous">
               <a
@@ -118,25 +110,27 @@ fetch('./projects.json')
 
               <ul class="projects__info__list">
                 Build with:
-                ${project.tecnology.map(item => `
+                ${project.tecnology
+                  .map(
+                    (item) => `
                   <li class="projects__info__list">- ${item}</li>
-                `).join('')}        
+                `
+                  )
+                  .join("")}        
               </ul>
             </div>
           </div>
                
             `;
-            contenedor.appendChild(div);
-        });
-    })
-    .catch(error => console.error('Error al cargar los proyectos:', error));
-
-
-    // Obteniendo los datos del formulario de contacto
-
-    form.addEventListener('submit', e => {
-      e.preventDefault();
-      const data = Object.fromEntries(new FormData(e.target));
-      form.reset();
-      
+      contenedor.appendChild(div);
     });
+  })
+  .catch((error) => console.error("Error al cargar los proyectos:", error));
+
+// Obteniendo los datos del formulario de contacto
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const data = Object.fromEntries(new FormData(e.target));
+  form.reset();
+});
