@@ -127,10 +127,6 @@ fetch("./projects.json")
   })
   .catch((error) => console.error("Error al cargar los proyectos:", error));
 
-// Obteniendo los datos del formulario de contacto
 
-// form.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   const data = Object.fromEntries(new FormData(e.target));
-//   form.reset();
-// });
+
+
