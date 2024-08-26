@@ -172,10 +172,10 @@
         </div>
 
         <div class="about-me__container">
-          <button type="button" class="about-me__container__contact">
+          <button type="button" class="about-me__container__contact primary-button">
             <a href="">Connet with me</a>
           </button>
-          <button type="button" class="about-me__container__cv">
+          <button type="button" class="about-me__container__cv primary-button">
             <a href="">Download my cv</a>
           </button>
         </div>
@@ -312,15 +312,17 @@
           Call or Write <span class="contact__subtitle--resalt">anytime</span>
         </h2>
 
-        <form action="" class="contact__form" id="contact-form">
+        <form action="" class="contact__form" id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="daa9b69a-074b-4e40-96c4-dad72b5e6f36">
           <div class="form__container">
             <div class="container__group">
               <input
                 type="text"
+                name="full-name"
                 required
                 maxlength="45"
                 id="full-name"
-                pattern="[a-zA-Z]+"
+                pattern="^[A-Za-zÀ-ÿ]+(?:\s[A-Za-zÀ-ÿ]+)*$"
                 class="form__input-full-name"
               />
 
@@ -333,6 +335,7 @@
             <div class="container__group">
               <input
                 type="email"
+                name="email"
                 required
                 maxlength="45"
                 pattern="/\b[\w\.-]+@[\w\.-]+\.\w{2,4}\b/gi"
@@ -346,12 +349,12 @@
             <div class="container__group">
               <input
                 type="tel"
+                name="phone"
                 required
                 maxlength="45"
                 id="phone"
                 class="form__phone"
-                pattern="^\+?56\s?9\d{8}$
-                "
+                pattern="^\+?[0-9]{1,3}?[-. ]?[0-9]{3}[-. ]?[0-9]{4}$"
               />
               <label for="phone" class="form__email">Phone</label>
               <span class="error-notification"> Phone number invalid </span>
@@ -371,7 +374,7 @@
               </span>
             </div>
 
-            <button type="submit" class="form__btn-submit">Send Message</button>
+            <button type="submit" class="form__btn-submit btn-submit">Send Message</button>
           </div>
         </form>
       </section>

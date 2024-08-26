@@ -92,6 +92,7 @@
       padding-left: 1rem;
       border-radius: 5px;
       background: transparent;
+      padding-top: 1rem;
     }
 
     .form__textarea:focus ~ label,
@@ -113,44 +114,7 @@
     }
   }
 
-  .form__btn-submit {
-    padding: 15px 15px;
-    text-align: center;
-    font-size: 13px;
-    position: relative;
-    border-radius: 2px;
-    z-index: 1;
-    transition: all 250ms;
-    overflow: hidden;
-    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-
-    &::before {
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: "";
-      border-radius: inherit;
-      height: inherit;
-      width: 0;
-      height: 100%;
-      z-index: -1;
-      background-color: var(--resalt);
-      box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
-      transition: all 250ms;
-    }
-
-    &:hover {
-      color: var(--primary);
-      cursor: pointer;
-    }
-
-    &:hover::before {
-      width: 100%;
-    }
-  }
+  
 }
 
 @media screen and (min-width: 1115px) {

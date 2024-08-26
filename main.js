@@ -7,6 +7,8 @@ const mail = document.getElementById("mail");
 const errorNotification = document.querySelector(".error-notification");
 const textarea = document.querySelector(".form__textarea");
 const phone = document.querySelector(".form__phone");
+const form= document.getElementById("contact-form");
+
 
 
 iconMenu.addEventListener("click", () => {
@@ -87,7 +89,7 @@ function validationInput(e) {
 }
 
 
-
+// Mostrando los Projectos en la sección de projects
 
 fetch('./projects.json')
     .then(response => response.json())
@@ -128,3 +130,13 @@ fetch('./projects.json')
         });
     })
     .catch(error => console.error('Error al cargar los proyectos:', error));
+
+
+    // Obteniendo los datos del formulario de contacto
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(e.target));
+      form.reset();
+      
+    });
