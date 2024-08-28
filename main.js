@@ -8,6 +8,7 @@ const errorNotification = document.querySelector(".error-notification");
 const textarea = document.querySelector(".form__textarea");
 const phone = document.querySelector(".form__phone");
 const form = document.getElementById("contact-form");
+const list = document.querySelector(".nav__container-links");
 
 iconMenu.addEventListener("click", () => {
   iconMenu.classList.add("off");
@@ -21,6 +22,18 @@ iconClose.addEventListener("click", () => {
   nav.classList.remove("open-menu");
 });
 
+// Esconder el link al visitar un enlace del menu
+let items = list.querySelectorAll("li:has(a)");
+console.log(items.length);
+items.forEach((item) => {
+  item.addEventListener("click", () => {
+    if(nav.classList.contains("open-menu")){
+      nav.classList.remove("open-menu");
+      iconMenu.classList.remove("off");
+      iconClose.classList.remove("on");
+    }
+  });
+});
 // Activación del modo Dark
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -126,7 +139,3 @@ fetch("./projects.json")
     });
   })
   .catch((error) => console.error("Error al cargar los proyectos:", error));
-
-
-
-
