@@ -63,7 +63,7 @@
 
         &:hover::after {
           display: inline-block;
-          cursor: pointer;
+          
         }
       }
     }
