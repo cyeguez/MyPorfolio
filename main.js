@@ -10,6 +10,7 @@ const phone = document.querySelector(".form__phone");
 const form = document.getElementById("contact-form");
 const list = document.querySelector(".nav__container-links");
 
+
 iconMenu.addEventListener("click", () => {
   iconMenu.classList.add("off");
   iconClose.classList.add("on");
@@ -27,7 +28,7 @@ let items = list.querySelectorAll("li:has(a)");
 console.log(items.length);
 items.forEach((item) => {
   item.addEventListener("click", () => {
-    if(nav.classList.contains("open-menu")){
+    if (nav.classList.contains("open-menu")) {
       nav.classList.remove("open-menu");
       iconMenu.classList.remove("off");
       iconClose.classList.remove("on");
@@ -105,15 +106,7 @@ fetch("./projects.json")
       const img = document.querySelector(".project__item__previous__link");
       div.innerHTML = `
             <div class="projects__item">
-            <div class="project__item__previous">
-              <a
-                href="${project.url}"
-                target="_blank"
-                class="project__item__previous__link"
-                style= "background-image: url('${project.image}');"
-              >               
-              </a>
-            </div>
+            <div class="project__item__previous" style="background-image: url('${project.image}');" ></div>
             <div class="projects__info">
               <h3 class="projects__info__title">${project.nameProject}</h3>
 
@@ -131,6 +124,9 @@ fetch("./projects.json")
                   )
                   .join("")}        
               </ul>
+              <a href="${
+                project.url
+              }" target="_blank" class="projects__info__link primary-button"> Visit my site</a>
             </div>
           </div>
                
@@ -139,3 +135,5 @@ fetch("./projects.json")
     });
   })
   .catch((error) => console.error("Error al cargar los proyectos:", error));
+
+  
