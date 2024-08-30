@@ -43,6 +43,13 @@
     "description": "This project was built with HTML, SASS and other technologies, this website allows you to calculate age..",
     "url": "https://cyeguez.github.io/intro-component-with-signup-form-master/",
     "tecnology":["Semantic HTML", "CSS custom properties", "BEM Methodology", "SASS",  "FirstMobile", "Figma"]
+  },
+  {
+    "nameProject": "Juego de Memoria",
+    "image": "../assets/img/juego-de-memoria.png",
+    "description": "It is a project that consists of developing a memory game, which is based on a 4x4 matrix, where the player when clicking on a card begins time.",
+    "url": "https://juego-de-memoria-html-js.netlify.app/",
+    "tecnology":["HTML", "CSS custom properties"]
   }
 
  
