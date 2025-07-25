@@ -1,0 +1,52 @@
+{
+  "header": {
+    "siteTitle": "César Yeguez - Portfolio",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    }
+  },
+  "hero": {
+    "greeting": "Hi! I'm César Yeguez",
+    "subtitle": "Frontend Web Developer",
+    "cta": "View projects"
+  },
+  "about": {
+    "title": "About Me",
+    "description": "I'm a web developer passionate about creating engaging and functional digital experiences. I have experience with modern technologies like React, JavaScript, and CSS."
+  },
+  "projects": {
+    "title": "Projects",
+    "list": [
+      {
+        "name": "Project One",
+        "description": "Brief description of project one.",
+        "link": "https://project-one-link.com"
+      },
+      {
+        "name": "Project Two",
+        "description": "Brief description of project two.",
+        "link": "https://project-two-link.com"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Want to work with me? Send me a message!",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "send": "Send"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 César Yeguez. All rights reserved.",
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  }
+}

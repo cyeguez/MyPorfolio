@@ -1,0 +1,52 @@
+{
+  "header": {
+    "siteTitle": "César Yeguez - Portafolio",
+    "nav": {
+      "home": "Inicio",
+      "about": "Sobre mí",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    }
+  },
+  "hero": {
+    "greeting": "¡Hola! Soy César Yeguez",
+    "subtitle": "Desarrollador Web Frontend",
+    "cta": "Ver proyectos"
+  },
+  "about": {
+    "title": "Sobre mí",
+    "description": "Soy un desarrollador web apasionado por crear experiencias digitales atractivas y funcionales. Tengo experiencia en tecnologías modernas como React, JavaScript y CSS."
+  },
+  "projects": {
+    "title": "Proyectos",
+    "list": [
+      {
+        "name": "Proyecto Uno",
+        "description": "Descripción breve del proyecto uno.",
+        "link": "https://enlace-proyecto-uno.com"
+      },
+      {
+        "name": "Proyecto Dos",
+        "description": "Descripción breve del proyecto dos.",
+        "link": "https://enlace-proyecto-dos.com"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Quieres trabajar conmigo? ¡Envíame un mensaje!",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "send": "Enviar"
+    }
+  },
+  "footer": {
+    "copyright": "© 2025 César Yeguez. Todos los derechos reservados.",
+    "social": {
+      "linkedin": "LinkedIn",
+      "github": "GitHub"
+    }
+  }
+}
