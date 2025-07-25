@@ -24,21 +24,29 @@
     .skills__container__tecnology {
       width: 100px;
       height: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: grid;
+      place-items: center;
+     
       transition: transform 1.5ms;
       border-radius: 10px;
       background: var(--primary);
       box-shadow: var(--box-shadow);
       border: 1px solid transparent;
+     
 
       &:hover {
-        cursor: pointer;
-        border: 1px solid var(--resalt);
+        transform: scale(1.15);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        border: 2px solid var(--resalt);
+        transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+          box-shadow 0.3s, border 0.3s;
       }
-
       
+      & svg{
+        display: block;
+        margin: auto;
+        
+      }
     }
   }
 }
