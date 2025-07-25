@@ -38,11 +38,7 @@
         border: 1px solid var(--resalt);
       }
 
-      .tecnology__img {
-        width: 80%;
-        height: 80%;
-        object-fit: contain;
-      }
+      
     }
   }
 }
