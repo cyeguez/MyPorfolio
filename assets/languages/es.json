@@ -10,15 +10,15 @@
     }
   },
   "hero": {
-    "greeting": [
-      { "title": "¡Hola! Soy", 
-      "name": "César" }],
-    "subtitle": "Desarrollador Web Frontend",
+    "greeting": [{ "title": "¡Hola! Soy", "name": "César" }],
+    "job": "Desarrollador Web Frontend",
     "cta": "Ver proyectos"
   },
   "about-me": {
     "title": "Sobre mí",
-    "description": "Soy un desarrollador web apasionado por crear experiencias digitales atractivas y funcionales. Tengo experiencia en tecnologías modernas como React, JavaScript y CSS."
+    "introduction": "¡Hola! Soy un apasionado desarrollador frontend con aproximadamente un año y medio de experiencia aprendiendo y creando aplicaciones web atractivas y funcionales. Mi interés por la tecnología y el desarrollo me ha llevado a explorar diversas herramientas y frameworks, como HTML, CSS y JavaScript, así como bibliotecas como React. Siempre busco nuevos retos y oportunidades para mejorar mis habilidades y contribuir a proyectos innovadores. Me entusiasma el futuro del desarrollo web y cómo puedo formar parte de esta evolución. ¡Gracias por visitar mi portafolio!",
+    "contact": "Contactame",
+    "cv": "Descarga mi cv"
   },
   "projects": {
     "title": "Proyectos",

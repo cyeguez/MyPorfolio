@@ -158,18 +158,18 @@
 
     <main>
       <section class="hero">
-        <h1 class="hero__title">
-          Hola, Soy <span class="hero__title--name">César</span>
+        <h1 class="hero__title" data-section="hero" data-value="title">
+          Hola, Soy <span class="hero__title--name" data-section="hero" data-value="name">César</span>
           <span class="hero__title--hand">👋</span>
         </h1>
-        <h2 class="hero__job">Soy desarrollador web.</h2>
+        <h2 class="hero__job" data-section="hero" data-value="job">Soy desarrollador web.</h2>
       </section>
 
       <section id="about" class="about-me">
         <div class="about-me__wrapp">
           <div class="about-me__avatar"></div>
 
-          <p class="about-me__introduction">
+          <p class="about-me__introduction" data-section="about-me" data-value="introduction" >
             ¡Hola! Soy un apasionado desarrollador frontend con aproximadamente
             un año y medio de experiencia aprendiendo y creando aplicaciones web
             atractivas y funcionales. Mi interés por la tecnología y el
@@ -187,10 +187,10 @@
             type="button"
             class="about-me__container__contact primary-button"
           >
-            <a href="#contact">Contactame</a>
+            <a href="#contact" data-section="about-me" data-value="contact">Contactame</a>
           </button>
           <button type="button" class="about-me__container__cv primary-button">
-            <a href="">Descarga mi cv</a>
+            <a href="" data-section="about-me" data-value="cv">Descarga mi cv</a>
           </button>
         </div>
         <div class="about-me__red-social">
