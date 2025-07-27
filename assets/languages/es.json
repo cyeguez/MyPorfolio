@@ -4,12 +4,15 @@
     "nav": {
       "home": "Inicio",
       "about": "Sobre mí",
+      "skills": "Habilidades",
       "projects": "Proyectos",
       "contact": "Contacto"
     }
   },
   "hero": {
-    "greeting": "¡Hola! Soy César Yeguez",
+    "greeting": [
+      { "title": "¡Hola! Soy", 
+      "name": "César" }],
     "subtitle": "Desarrollador Web Frontend",
     "cta": "Ver proyectos"
   },
