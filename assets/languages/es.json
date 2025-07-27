@@ -24,14 +24,28 @@
     "title": "Proyectos",
     "list": [
       {
-        "name": "Proyecto Uno",
-        "description": "Descripción breve del proyecto uno.",
-        "link": "https://enlace-proyecto-uno.com"
+        "name": "Tienda Virtual",
+        "description": "Es la vista de un producto en una tienda virtual, donde te permite observar el producto en varias fotos, añadirlo a carrito y calcular el valor de la compra"
       },
       {
-        "name": "Proyecto Dos",
-        "description": "Descripción breve del proyecto dos.",
-        "link": "https://enlace-proyecto-dos.com"
+        "name": "Pokedex",
+        "description": "Pokedex Es una Pokedex que te permite buscar Pokémon por nombre, número y tipo. Esta aplicación funciona con pokeApi."
+      },
+      {
+        "name": "Página Web",
+        "description": "Es una página web, la cual está construida con HTML, SASS y JavaScript. Este proyecto consiste en el diseño de una página web estática, es responsiva y el menú varía según el tipo de dispositivo."
+      },
+      {
+        "name": "Calculadora de propinas",
+        "description": "ES una calculadora de propinas ,este proyecto consiste en un sitio web que, al proporcionar el importe total y el número de personas, calcula la propina total e individual."
+      },
+      {
+        "name": "Calculadora de edad",
+        "description": "Este proyecto se desarrolló con HTML, SASS y otras tecnologías. Este sitio web permite calcular la edad."
+      },
+      {
+        "name": "Juego de memoria",
+        "description": "Es un proyecto que consiste en desarrollar un juego de memoria, el cual se basa en una matriz de 4x4, donde el jugador al hacer clic sobre una tarjeta inicia el tiempo."
       }
     ]
   },
@@ -39,14 +53,15 @@
     "title": "Contacto",
     "description": "¿Quieres trabajar conmigo? ¡Envíame un mensaje!",
     "form": {
-      "name": "Nombre",
+      "name": "Nombre completo",
       "email": "Correo electrónico",
+      "phone": "Teléfono",
       "message": "Mensaje",
       "send": "Enviar"
     }
   },
   "footer": {
-    "copyright": "© 2025 César Yeguez. Todos los derechos reservados.",
+    "copyright": "© 2025 César Yeguez. Todos los derechos reservados. Hecho con ❤️ por César Yeguez.",
     "social": {
       "linkedin": "LinkedIn",
       "github": "GitHub"
