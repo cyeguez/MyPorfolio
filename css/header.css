@@ -7,7 +7,6 @@ body {
     align-items: center;
     padding-inline: 1rem;
     padding-top: 1rem;
-    flex-wrap: wrap;
     top: 0px;
     background-color: var(--primary);
     z-index: 9999;
@@ -35,7 +34,18 @@ body {
         transform: scale(1);
         top: 0;
       }
+     
     }
+
+     .header__flags {
+        width: 60px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-left: 140px;
+        cursor: pointer;
+      }
     .nav {
       position: fixed;
       width: 0;
@@ -169,9 +179,16 @@ body {
       grid-template-columns: minmax(60%, 1115px) auto;
       grid-template-rows: 1fr;
       padding-top: 0;
+      
 
       .header__btn-menu {
         display: none;
+      }
+
+      .header__flags {
+        position: absolute;
+       right: 260px;
+       
       }
 
       .nav {
