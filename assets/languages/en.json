@@ -1,34 +1,55 @@
 {
   "header": {
-    "siteTitle": "César Yeguez - Portfolio",
-    "nav": {
-      "home": "Home",
-      "about": "About",
-      "projects": "Projects",
-      "contact": "Contact"
-    }
+    "siteTitle": "César Yeguez - Portfolio"
+  },
+  "nav": {
+    "home": "Home",
+    "about-me": "About me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
   },
   "hero": {
-    "greeting": "Hi! I'm César Yeguez",
-    "subtitle": "Frontend Web Developer",
+    "title": "Hello! I'm", 
+    "name": "César",
+    "job": "Frontend Web Developer",
     "cta": "View projects"
   },
-  "about": {
-    "title": "About Me",
-    "description": "I'm a web developer passionate about creating engaging and functional digital experiences. I have experience with modern technologies like React, JavaScript, and CSS."
+  "about-me": {
+    "title": "About me",
+    "introduction": "Hello! I'm a passionate frontend developer with approximately a year and a half of experience learning and creating attractive and functional web applications. My interest in technology and development has led me to explore various tools and frameworks, such as HTML, CSS, and JavaScript, as well as libraries like React. I'm always looking for new challenges and opportunities to improve my skills and contribute to innovative projects. I'm excited about the future of web development and how I can be part of this evolution. Thank you for visiting my portfolio!",
+    "contact": "Contact me",
+    "cv": "Download my CV"
+  },
+  "skills": {
+    "title": "My skills"
   },
   "projects": {
     "title": "Projects",
     "list": [
       {
-        "name": "Project One",
-        "description": "Brief description of project one.",
-        "link": "https://project-one-link.com"
+        "name": "Virtual Store",
+        "description": "It's the view of a product in a virtual store, where you can observe the product in various photos, add it to the cart, and calculate the purchase value"
       },
       {
-        "name": "Project Two",
-        "description": "Brief description of project two.",
-        "link": "https://project-two-link.com"
+        "name": "Pokedex",
+        "description": "Pokedex is a Pokedex that allows you to search for Pokémon by name, number, and type. This application works with pokeApi."
+      },
+      {
+        "name": "Web Page",
+        "description": "It's a web page, which is built with HTML, SASS, and JavaScript. This project consists of the design of a static web page, it's responsive, and the menu varies according to the type of device."
+      },
+      {
+        "name": "Tip Calculator",
+        "description": "It's a tip calculator, this project consists of a website that, by providing the total amount and the number of people, calculates the total and individual tip."
+      },
+      {
+        "name": "Age Calculator",
+        "description": "This project was developed with HTML, SASS, and other technologies. This website allows you to calculate age."
+      },
+      {
+        "name": "Memory Game",
+        "description": "It's a project that consists of developing a memory game, which is based on a 4x4 matrix, where the player starts the time by clicking on a card."
       }
     ]
   },
@@ -36,14 +57,15 @@
     "title": "Contact",
     "description": "Want to work with me? Send me a message!",
     "form": {
-      "name": "Name",
+      "name": "Full name",
       "email": "Email",
+      "phone": "Phone",
       "message": "Message",
       "send": "Send"
     }
   },
   "footer": {
-    "copyright": "© 2025 César Yeguez. All rights reserved.",
+    "copyright": "© 2025 César Yeguez. All rights reserved. Made with ❤️ by César Yeguez.",
     "social": {
       "linkedin": "LinkedIn",
       "github": "GitHub"

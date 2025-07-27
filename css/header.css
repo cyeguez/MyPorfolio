@@ -79,6 +79,7 @@ body {
         gap: 1rem;
         transition: all 0.5ms;
         margin-right: -16px;
+        text-transform: uppercase;
 
         .nav.open-menu .nav__container-links {
           align-items: center;

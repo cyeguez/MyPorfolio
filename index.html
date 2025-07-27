@@ -58,15 +58,14 @@
           <path d="M6 6l12 12" />
         </svg>
       </div>
-      <div class="header__flags">
-        <svg width="16" heigh="16">
+      <div class="header__flags" data-set="language">
+        <svg width="16" heigh="16" data-language="es">
           <use xlink:href="./assets/sprite.svg#spain"></use>
         </svg>
-        
-        <svg width="16" heigh="16">
+
+        <svg width="16" heigh="16" data-language="en">
           <use xlink:href="./assets/sprite.svg#usa"></use>
         </svg>
-
       </div>
 
       <label for="btn-mode-dark" class="container-btn-dark">
@@ -77,7 +76,6 @@
         />
         <div class="container-btn-dark__wrapper">
           <div class="container-btn-dark__wrapper__circle" id="btnCircle"></div>
-          
 
           <svg
             id="iconMoon"
@@ -138,28 +136,27 @@
       <nav class="nav">
         <ul class="nav__container-links">
           <li class="nav__container-links__item">
-            <a href="/" class="active" data-section="header" data-value="home"
-              >Inicio</a
+            <a href="/" class="active" data-section="nav" data-value="home">Inicio</a
             >
           </li>
           <li class="nav__container-links__item">
-            <a href="#about" class="" data-section="header" data-value="about"
+            <a href="#about" class="" data-section="nav" data-value="about-me"
               >Acerca de mi</a
             >
           </li>
           <li class="nav__container-links__item">
-            <a href="#skills" data-section="header" data-value="skills"
+            <a href="#skills" data-section="nav" data-value="skills"
               >Habilidades</a
             >
           </li>
           <li class="nav__container-links__item">
-            <a href="#projects" data-section="header" data-value="projects"
+            <a href="#projects" data-section="nav" data-value="projects"
               >Proyectos</a
             >
           </li>
 
           <li class="nav__container-links__item">
-            <a href="#contact" data-section="header" data-value="contact"
+            <a href="#contact" data-section="nav" data-value="contact"
               >Contacto</a
             >
           </li>
@@ -169,8 +166,8 @@
 
     <main>
       <section class="hero">
-        <h1 class="hero__title" data-section="hero" data-value="title">
-          Hola, Soy
+        <h1 class="hero__title">
+          <span data-section="hero" data-value="title">Hola, Soy</span>
           <span class="hero__title--name" data-section="hero" data-value="name"
             >César</span
           >
@@ -277,7 +274,9 @@
       </section>
 
       <section id="skills" class="skills">
-        <h2 class="skills__title">Mis Habilidades</h2>
+        <h2 class="skills__title" data-section="skills" data-value="title">
+          Mis Habilidades
+        </h2>
 
         <div class="skills__container">
           <div class="skills__container__tecnology">

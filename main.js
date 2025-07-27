@@ -9,6 +9,23 @@ const textarea = document.querySelector(".form__textarea");
 const phone = document.querySelector(".form__phone");
 const form = document.getElementById("contact-form");
 const list = document.querySelector(".nav__container-links");
+const langButtons= document.querySelectorAll("[data-language]");
+const textsToChance= document.querySelectorAll("[data-section]")
+
+//funcion para cambiar el idioma
+langButtons.forEach((button)=>{
+  button.addEventListener("click",()=>{
+  fetch(`./assets/languages/${button.dataset.language}.json`)
+  .then((response) => response.json())
+  .then((data) => {
+    textsToChance.forEach((element)=>{
+      const section= element.dataset.section;
+      const value= element.dataset.value;
+      element.innerHTML= data[section][value];
+    })
+  });
+   })
+})
 
 
 iconMenu.addEventListener("click", () => {
@@ -25,7 +42,6 @@ iconClose.addEventListener("click", () => {
 
 // Esconder el link al visitar un enlace del menu
 let items = list.querySelectorAll("li:has(a)");
-console.log(items.length);
 items.forEach((item) => {
   item.addEventListener("click", () => {
     if (nav.classList.contains("open-menu")) {
