@@ -1,0 +1,52 @@
+[
+  {
+    "nameProject": "Tienda Virtual",
+    "image": "../assets/img/ecommerce.png",
+    "description": "Esta es una vista de diseño de producto en una tienda virtual. Tiene varias imágenes de muestra en las que puedes hacer clic para ver en detalle. También cuenta con un campo para agregar la cantidad del producto, que se mostrará en el carrito con su respectivo valor. Puedes agregar más productos o eliminar el artículo.",
+    "url": "https://cyeguez.github.io/E-commerce-product-page/",
+    "tecnology":["HTML Semántico","Metodología BEM", "SASS", "FirstMobile"]
+  },
+
+  {
+    "nameProject": "Pokedex",
+    "image": "../assets/img/pokedex.png",
+    "description": "Es una Pokedex que te permite buscar pokémon por nombre, número y tipo. Esta aplicación funciona con pokeApi.",
+    "url": "https://cyeguez.github.io/Pokedex/",
+    "tecnology":["HTML Semántico","Metodología BEM", "FirstMobile"]
+  },
+  {
+    "nameProject": "Página Web",
+    "image": "../assets/img/Blog.png",
+    "description": "Es una página web construida con HTML, SASS y JavaScript. Este proyecto consiste en el diseño de una página web estática, es responsiva y el menú varía según el tipo de dispositivo.",
+    "url": "https://cyeguez.github.io/blogr-landing-page/",
+    "tecnology":["HTML Semántico","Metodología BEM", "FirstMobile"]
+  },
+  {
+    "nameProject": "Calculadora de propinas",
+    "image": "../assets/img/Tip-calculator.png",
+    "description": "Este proyecto consiste en un sitio web que, al proporcionar el importe total y el número de personas, calcula la propina total e individual.",
+    "url": "https://cyeguez.github.io/tip-calculator-app-main/",
+    "tecnology":["HTML Semántico","Metodología BEM", "SASS", "FirstMobile", "Figma"]
+  },
+  {
+    "nameProject": "Calculadora de edad",
+    "image": "../assets/img/Age-calculator.png",
+    "description": "Este proyecto se desarrolló con HTML, SASS y otras tecnologías. Este sitio web permite calcular la edad.",
+    "url": "https://cyeguez.github.io/age-calculator-app-main/",
+    "tecnology":["HTML Semántico", "Propiedades personalizadas CSS", "Metodología BEM", "SASS", "CSS Grid", "FirstMobile", "Figma"]
+  },
+  {
+    "nameProject": "Formulario",
+    "image": "../assets/img/Form.png",
+    "description": "Este proyecto se desarrolló con HTML, SASS y otras tecnologías. Este sitio web permite validar un formulario de registro.",
+    "url": "https://cyeguez.github.io/intro-component-with-signup-form-master/",
+    "tecnology":["HTML Semántico", "Propiedades personalizadas CSS", "Metodología BEM", "SASS", "FirstMobile", "Figma"]
+  },
+  {
+    "nameProject": "Juego de Memoria",
+    "image": "../assets/img/juego-de-memoria.png",
+    "description": "Es un proyecto que consiste en desarrollar un juego de memoria, el cual se basa en una matriz de 4x4, donde el jugador al hacer clic sobre una tarjeta inicia el tiempo.",
+    "url": "https://juego-de-memoria-html-js.netlify.app/",
+    "tecnology":["HTML", "Propiedades personalizadas CSS"]
+  }
+]

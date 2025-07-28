@@ -9,24 +9,24 @@ const textarea = document.querySelector(".form__textarea");
 const phone = document.querySelector(".form__phone");
 const form = document.getElementById("contact-form");
 const list = document.querySelector(".nav__container-links");
-const langButtons= document.querySelectorAll("[data-language]");
-const textsToChance= document.querySelectorAll("[data-section]")
+const langButtons = document.querySelectorAll("[data-language]");
+const textsToChance = document.querySelectorAll("[data-section]");
 
 //funcion para cambiar el idioma
-langButtons.forEach((button)=>{
-  button.addEventListener("click",()=>{
-  fetch(`./assets/languages/${button.dataset.language}.json`)
-  .then((response) => response.json())
-  .then((data) => {
-    textsToChance.forEach((element)=>{
-      const section= element.dataset.section;
-      const value= element.dataset.value;
-      element.innerHTML= data[section][value];
-    })
+langButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    fetch(`./assets/languages/${button.dataset.language}.json`)
+      .then((response) => response.json())
+      .then((data) => {
+        textsToChance.forEach((element) => {
+          const section = element.dataset.section;
+          const value = element.dataset.value;
+          element.innerHTML = data[section][value];
+        });
+      });
+      showProject(button.dataset.language);
   });
-   })
-})
-
+});
 
 iconMenu.addEventListener("click", () => {
   iconMenu.classList.add("off");
@@ -112,44 +112,48 @@ function validationInput(e) {
 }
 
 // Mostrando los Projectos en la sección de projects
-
-fetch("./projects.json")
-  .then((response) => response.json())
-  .then((data) => {
-    const contenedor = document.querySelector(".projects__container");
-    data.forEach((project) => {
-      const div = document.createElement("div");
-      const img = document.querySelector(".project__item__previous__link");
-      div.innerHTML = `
-            <div class="projects__item">
-            <div class="project__item__previous" style="background-image: url('${project.image}');" ></div>
-            <div class="projects__info">
-              <h3 class="projects__info__title">${project.nameProject}</h3>
-
-              <p class="projects__info__description">
-                ${project.description}
-              </p>
-
-              <ul class="projects__info__list">
-                Build with:
-                ${project.tecnology
-                  .map(
-                    (item) => `
-                  <li class="projects__info__list">- ${item}</li>
-                `
-                  )
-                  .join("")}        
-              </ul>
-              <a href="${
-                project.url
-              }" target="_blank" class="projects__info__link primary-button"> Visit my site</a>
-            </div>
-          </div>
-               
-            `;
-      contenedor.appendChild(div);
-    });
-  })
-  .catch((error) => console.error("Error al cargar los proyectos:", error));
-
+function showProject(lenguaje) {
+  fetch(`./assets/projects/${lenguaje}.json`)
+    .then((response) => response.json())
+    .then((data) => {
+      const contenedor = document.querySelector(".projects__container");
+      // Limpiar el contenedor antes de agregar nuevos proyectos
+      contenedor.innerHTML = "";
+      
+      data.forEach((project) => {
+        const div = document.createElement("div");
+        div.innerHTML = `
+              <div class="projects__item">
+              <div class="project__item__previous" style="background-image: url('${
+                project.image
+              }');" ></div>
+              <div class="projects__info">
+                <h3 class="projects__info__title">${project.nameProject}</h3>
   
+                <p class="projects__info__description">
+                  ${project.description}
+                </p>
+  
+                <ul class="projects__info__list">
+                  Build with:
+                  ${project.tecnology
+                    .map(
+                      (item) => `
+                    <li class="projects__info__list">- ${item}</li>
+                  `
+                    )
+                    .join("")}
+                </ul>
+                <a href="${
+                  project.url
+                }" target="_blank" class="projects__info__link primary-button"> Visit my site</a>
+              </div>
+            </div>
+                 
+              `;
+        contenedor.appendChild(div);
+      });
+    })
+    .catch((error) => console.error("Error al cargar los proyectos:", error));
+}
+showProject("es");
